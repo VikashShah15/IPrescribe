@@ -67,8 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\details_close.png" />
+    <Content Include="Content\images\details_open.png" />
+    <Content Include="Content\images\medical-record.png" />
+    <Content Include="Content\images\prescription.png" />
+    <Content Include="Content\images\refresh.png" />
+    <Content Include="Content\js\modal-steps.min.js" />
+    <Content Include="Pharmacy.aspx" />
     <Content Include="CreateRx.aspx" />
     <Content Include="MyProfile.aspx" />
+    <Content Include="objects.txt" />
     <Content Include="Patients.aspx" />
     <Content Include="Content\css\bootstrap-wysihtml5.css" />
     <Content Include="Content\css\css-style.min.css" />
@@ -369,6 +377,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pharmacy.aspx.cs">
+      <DependentUpon>Pharmacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pharmacy.aspx.designer.cs">
+      <DependentUpon>Pharmacy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CreateRx.aspx.cs">
       <DependentUpon>CreateRx.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

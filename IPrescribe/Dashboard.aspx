@@ -12,11 +12,25 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
-                <div class="card-header bg-info text-center">
-                    <h4 class="mb-0 text-white">Good afternoon, User</h4>
+                <div class="card-header bg-info">
+                    <h4 class="mb-0 text-white float-left">Provider Name : Test Provider</h4>
+                    <h4 class="mb-0 text-white float-right">Location : Test Location</h4>
                 </div>
-                <div class="card-body text-center">
-                    <h4 class="card-title">What would you like to do today?</h4>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4 class="mb-0"><b>Patient ID:</b> #001</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="mb-0"><b>Patient:</b> Alice Wonderland</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="mb-0"><b>DOB:</b> 02/08/1995</h4>
+                        </div>
+                        <div class="col-md-2">
+                            <h4 class="mb-0"><b>Gender:</b> F</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
