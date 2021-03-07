@@ -101,6 +101,43 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="PrescribeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="approvemodeltext">Drug Name</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Rx Date</label>
+                        <input type="text" id="date" name="date" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Duration (Days)</label>
+                        <input type="text" id="exitinterviewdate" name="exitinterviewdate" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Quantity">Quantity</label>
+                        <input type="text" id="Quantity" name="Quantity" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Refills">Refills</label>
+                        <input type="text" id="Refills" name="Quantity" class="form-control" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <%--button class="btn btn-danger" type="button" onclick="rejectenrollment()" id="btnReject">Reject</button>--%>
+                    <%--<button class="btn btn-success" type="button" id="submitBtn">Save Rx</button>--%>
+                    <a href="MyProfile.aspx" class="btn btn-success">Save Rx</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
 
         function showdiv() {
@@ -120,17 +157,17 @@
                 '<tr>' +
                 '<td>250 mg U</td>' +
                 '<td>Any further details here (images etc)...</td>' +
-                '<td><a href="MyProfile.aspx" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
+                '<td><a href="javascript:void(0);" data-toggle="modal" data-target="#PrescribeModal" id="prescribelink" class="btn btn-secondary" title="Prescribe Anyway!" style="margin-right: 10px;">Select</a></td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td>500 mg U</td>' +
                 '<td>Any further details here (images etc)...</td>' +
-                '<td><a href="MyProfile.aspx" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
+                '<td><a href="javascript:void(0);" data-toggle="modal" data-target="#PrescribeModal" id="prescribelink" class="btn btn-secondary" title="Prescribe Anyway!" style="margin-right: 10px;">Select</a></td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td>750 mg U</td>' +
                 '<td>Any further details here (images etc)...</td>' +
-                '<td><a href="MyProfile.aspx" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
+                '<td><a href="javascript:void(0);" data-toggle="modal" data-target="#PrescribeModal" id="prescribelink" class="btn btn-secondary" title="Prescribe Anyway!" style="margin-right: 10px;">Select</a></td>' +
                 '</tr>' +
                 '</table>';
         }
