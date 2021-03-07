@@ -154,8 +154,8 @@
                         <div class="tab-pane  p-20 p-l-0" id="medications" role="tabpanel">
                             <div class="col-md-12 align-self-center text-right m-b-15 m-r-0 p-r-0">
                                 <div class="d-flex justify-content-end align-items-center">
-                                    <%--<a href="AddPharmacy.aspx" class="btn btn-info d-lg-block m-l-15"><i class="fa fa-edit"></i>&nbsp;Change</a>--%>
-                                    <button type="submit" class="btn btn-danger m-b-10"><i class="fas fa-edit"></i>&nbsp;Change</button>
+                                    <a href="Pharmacy.aspx" class="btn btn-info d-lg-block m-l-15"><i class="fa fa-edit"></i>&nbsp;Change</a>
+                                    <%--<button type="submit" class="btn btn-danger m-b-10"><i class="fas fa-edit"></i>&nbsp;Change</button>--%>
                                 </div>
                             </div>
                             <div class="row">
@@ -173,8 +173,8 @@
                                                                 <th class="sorting_asc" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 40px;">Name</th>
                                                                 <th class="sorting" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="Address: activate to sort column ascending" style="width: 186px;">Address</th>
                                                                 <th class="sorting" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="Phone: activate to sort column ascending" style="width: 85px;">Phone</th>
-                                                                <%--<th class="sorting" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="Fax: activate to sort column ascending" style="width: 29px;">Fax</th>
-                                                                <th class="sorting" tabindex="0" aria-controls="example24" rowspan="1" colspan="1" aria-label="Speciality: activate to sort column ascending" style="width: 74px;">Speciality</th>
+                                                                <th class="sorting" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="Fax: activate to sort column ascending" style="width: 29px;">Status</th>
+                                                                <%--<th class="sorting" tabindex="0" aria-controls="example24" rowspan="1" colspan="1" aria-label="Speciality: activate to sort column ascending" style="width: 74px;">Speciality</th>
                                                                 <th class="" tabindex="0" aria-controls="example24" rowspan="1" colspan="1" aria-label="" style="width: 30px;">Service</th>--%>
                                                             </tr>
                                                         </thead>
@@ -183,24 +183,24 @@
                                                                 <td class="sorting_1">Bogus Pharmacy</td>
                                                                 <td>111 Nowhere San Francisco, CA 999999</td>
                                                                 <td>123-456-7890</td>
-                                                                <%--<td>555-555-5555</td>
-                                                                <td>Retail</td>
+                                                                <td>Primary</td>
+                                                                <%--<td>Retail</td>
                                                                 <td>Disabled</td>--%>
                                                             </tr>
                                                             <tr role="row" class="even">
                                                                 <td class="sorting_1">Brooks #578</td>
                                                                 <td>1074 Lexington Street Waltham, MA 02452</td>
                                                                 <td>123-456-7890</td>
-                                                                <%--<td>555-555-5555</td>
-                                                                <td>Retail</td>
+                                                                <td>Secondary</td>
+                                                                <%--<td>Retail</td>
                                                                 <td>Disabled</td>--%>
                                                             </tr>
                                                             <tr role="row" class="odd">
                                                                 <td class="sorting_1">Brooks #579</td>
                                                                 <td>80 River Street River City SC Waltham, MA 02453</td>
                                                                 <td>123-456-7890</td>
-                                                                <%--<td>555-555-5555</td>
-                                                                <td>Retail</td>
+                                                                <td>Secondary</td>
+                                                                <%--<td>Retail</td>
                                                                 <td>Disabled</td>--%>
                                                             </tr>
                                                         </tbody>
@@ -530,15 +530,23 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="allergiestext">Add New Allergie</h5>
+                    <h5 class="modal-title" id="allergiestext">Add New Allergy</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Allergie Name</label>
+                        <label for="exampleInputPassword1">Allergy Name</label>
                         <input type="text" id="allergiename" name="allergiename" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Severity</label>
+                        <input type="text" id="severity" name="severity" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Notes</label>
+                        <input type="text" id="notes" name="notes" class="form-control" />
                     </div>
                 </div>
                 <div class="modal-footer">

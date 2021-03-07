@@ -305,6 +305,21 @@
             order: [[1, 'asc']]
         });
 
+        $('#example28').DataTable({
+            dom: 'Bfrtip',
+            responsive: true,
+            columnDefs: [{
+                orderable: false,
+                className: 'select-checkbox',
+                targets: 0
+            }],
+            select: {
+                style: 'multi',
+                selector: 'td:first-child'
+            },
+            order: [[1, 'asc']]
+        });
+
         //$('#example24 tbody').on('click', 'tr', function () {
         //    var count = $('#example24').DataTable().rows('.selected').data().length;
         //    alert(count);

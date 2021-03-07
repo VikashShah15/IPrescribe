@@ -119,7 +119,7 @@
         </div>
     </div>
 
-    <div class="row" id="divResults" style="display: block">
+    <div class="row" id="divResults" style="display: none">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header bg-info">
@@ -130,20 +130,22 @@
                         <div class="form-body">
                             <div class="col-md-12 align-self-center text-right m-b-15 m-r-0 p-r-0">
                                 <div class="table-responsive">
-                                    <div id="example26_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
-                                        <table id="example26" class="display nowrap table table-hover table-striped table-bordered dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="example23_info" style="width: 100%;">
+                                    <div id="example28_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+                                        <table id="example28" class="display nowrap table table-hover table-striped table-bordered dataTable" cellspacing="0" width="100%" role="grid" aria-describedby="example23_info" style="width: 100%;">
                                             <thead>
                                                 <tr role="row">
-                                                    <th class="sorting_asc" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 40px;">Name</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="Address: activate to sort column ascending" style="width: 186px;">Address</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="Phone: activate to sort column ascending" style="width: 85px;">Phone</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="Fax: activate to sort column ascending" style="width: 29px;">Fax</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="Speciality: activate to sort column ascending" style="width: 74px;">Speciality</th>
-                                                    <th class="" tabindex="0" aria-controls="example26" rowspan="1" colspan="1" aria-label="" style="width: 30px;">Service</th>
+                                                    <th style="width: 20px;"></th>
+                                                    <th class="sorting_asc" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 40px;">Name</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="Address: activate to sort column ascending" style="width: 186px;">Address</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="Phone: activate to sort column ascending" style="width: 85px;">Phone</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="Fax: activate to sort column ascending" style="width: 29px;">Fax</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="Speciality: activate to sort column ascending" style="width: 74px;">Speciality</th>
+                                                    <th class="" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="" style="width: 30px;">Service</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr role="row" class="odd">
+                                                    <td></td>
                                                     <td class="sorting_1">Bogus Pharmacy</td>
                                                     <td>111 Nowhere San Francisco, CA 999999</td>
                                                     <td>123-456-7890</td>
@@ -152,6 +154,7 @@
                                                     <td>Disabled</td>
                                                 </tr>
                                                 <tr role="row" class="even">
+                                                    <td></td>
                                                     <td class="sorting_1">Brooks #578</td>
                                                     <td>1074 Lexington Street Waltham, MA 02452</td>
                                                     <td>123-456-7890</td>
@@ -160,6 +163,7 @@
                                                     <td>Disabled</td>
                                                 </tr>
                                                 <tr role="row" class="odd">
+                                                    <td></td>
                                                     <td class="sorting_1">Brooks #579</td>
                                                     <td>80 River Street River City SC Waltham, MA 02453</td>
                                                     <td>123-456-7890</td>
@@ -181,7 +185,7 @@
     <script>
 
         function showdiv() {
-            if ($("#txtSearch").val() != "") {
+            if ($("#Name").val() != "") {
                 $("#divResults").show();
             }
             else {
@@ -214,8 +218,8 @@
 
         $(document).ready(function () {
 
-            $("#txtSearch").keyup(function () {
-                if ($("#txtSearch").val() == "") {
+            $("#Name").keyup(function () {
+                if ($("#Name").val() == "") {
                     $("#divResults").hide();
                 }
             });
