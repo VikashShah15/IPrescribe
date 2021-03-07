@@ -120,17 +120,17 @@
                 '<tr>' +
                 '<td>250 mg U</td>' +
                 '<td>Any further details here (images etc)...</td>' +
-                '<td><a href="javascript:void(0);" data-toggle="modal" data-target="#PrescribeModal" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
+                '<td><a href="MyProfile.aspx" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td>500 mg U</td>' +
                 '<td>Any further details here (images etc)...</td>' +
-                '<td><a href="javascript:void(0);" data-toggle="modal" data-target="#PrescribeModal" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
+                '<td><a href="MyProfile.aspx" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
                 '</tr>' +
                 '<tr>' +
                 '<td>750 mg U</td>' +
                 '<td>Any further details here (images etc)...</td>' +
-                '<td><a href="javascript:void(0);" data-toggle="modal" data-target="#PrescribeModal" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
+                '<td><a href="MyProfile.aspx" id="prescribelink" class="btn btn-secondary" title="Save Rx!">Save Rx</a></td>' +
                 '</tr>' +
                 '</table>';
         }

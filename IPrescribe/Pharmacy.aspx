@@ -141,6 +141,7 @@
                                                     <th class="sorting" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="Fax: activate to sort column ascending" style="width: 29px;">Fax</th>
                                                     <th class="sorting" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="Speciality: activate to sort column ascending" style="width: 74px;">Speciality</th>
                                                     <th class="" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="" style="width: 30px;">Service</th>
+                                                    <th class="" tabindex="0" aria-controls="example28" rowspan="1" colspan="1" aria-label="" style="width: 30px;">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -152,6 +153,7 @@
                                                     <td>555-555-5555</td>
                                                     <td>Retail</td>
                                                     <td>Disabled</td>
+                                                    <td><a href="MyProfile.aspx#medications" class="btn btn-info d-lg-block m-l-15">Select</a></td>
                                                 </tr>
                                                 <tr role="row" class="even">
                                                     <td></td>
@@ -161,6 +163,7 @@
                                                     <td>555-555-5555</td>
                                                     <td>Retail</td>
                                                     <td>Disabled</td>
+                                                    <td><a href="MyProfile.aspx#medications" class="btn btn-info d-lg-block m-l-15">Select</a></td>
                                                 </tr>
                                                 <tr role="row" class="odd">
                                                     <td></td>
@@ -170,6 +173,7 @@
                                                     <td>555-555-5555</td>
                                                     <td>Retail</td>
                                                     <td>Disabled</td>
+                                                    <td><a href="MyProfile.aspx#medications" class="btn btn-info d-lg-block m-l-15">Select</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
